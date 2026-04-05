@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Contract Kings</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --black:#080808;
+  --black2:#0e0e0e;
+  --black3:#141414;
+  --gold:#D4A017;
+  --gold2:#F5C842;
+  --gold3:#8B6410;
+  --gold-glow:rgba(212,160,23,0.15);
+  --white:#ffffff;
+  --grey:#6a6a7a;
+  --light:#a0a0b2;
+  --glass:rgba(255,255,255,0.03);
+  --gborder:rgba(212,160,23,0.15);
+}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;overflow-x:hidden;cursor:none;}
+@media(max-width:768px){body{cursor:auto;}}
+
+/* CURSOR */
+#cur{width:10px;height:10px;background:var(--gold);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 12px var(--gold),0 0 24px rgba(212,160,23,.3);transition:width .25s,height .25s;}
+#ring{width:30px;height:30px;border:1px solid rgba(212,160,23,.35);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+@media(max-width:768px){#cur,#ring{display:none;}}
+
+/* PARTICLES */
+#pts{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+.pt{position:absolute;border-radius:50%;opacity:0;animation:rise linear infinite;}
+@keyframes rise{0%{opacity:0;transform:translateY(100vh);}10%{opacity:.45;}90%{opacity:.1;}100%{opacity:0;transform:translateY(-10vh) translateX(10px);}}
+
+/* NAV */
+nav{padding:20px 56px;display:flex;align-items:center;justify-content:space-between;background:var(--black2);border-bottom:1px solid rgba(212,160,23,.08);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);}
+.nlogo{font-family:'Cinzel',serif;font-size:14px;font-weight:700;letter-spacing:.15em;text-decoration:none;color:var(--white);text-transform:uppercase;}
+.nlogo span{color:var(--gold);}
+.nback{font-size:12px;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:6px;letter-spacing:.05em;transition:opacity .2s;}
+.nback:hover{opacity:.7;}
+@media(max-width:700px){nav{padding:16px 20px;}}
+
+/* HERO STRIP */
+.doc-hero{position:relative;padding:72px 48px 56px;max-width:860px;margin:0 auto;overflow:hidden;}
+.doc-hero::before{content:'';position:absolute;top:-60px;right:-80px;width:500px;height:500px;background:radial-gradient(ellipse,rgba(212,160,23,.05) 0%,transparent 65%);pointer-events:none;}
+.doc-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(212,160,23,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(212,160,23,.02) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 80% 80% at 80% 30%,black 0%,transparent 100%);}
+.doc-hero-inner{position:relative;z-index:2;}
+.doc-tag{font-size:10px;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
+.doc-tag::before,.doc-tag::after{content:'';width:16px;height:1px;background:var(--gold3);}
+.doc-title{font-family:'Cinzel',serif;font-size:clamp(34px,6vw,64px);font-weight:700;letter-spacing:-.02em;line-height:1.0;margin-bottom:16px;}
+.doc-title .g{color:var(--gold);}
+.doc-rule{width:52px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px 0;}
+.doc-meta{font-size:12px;color:var(--grey);letter-spacing:.04em;}
+.doc-meta span{color:var(--gold);}
+@media(max-width:700px){.doc-hero{padding:48px 20px 40px;}}
+
+/* DIVIDER */
+.div{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.16),transparent);}
+
+/* BODY */
+.wrap{max-width:860px;margin:0 auto;padding:64px 48px 100px;position:relative;z-index:1;}
+@media(max-width:700px){.wrap{padding:48px 20px 80px;}}
+
+h2{font-family:'Cinzel',serif;font-size:16px;font-weight:600;color:var(--white);letter-spacing:.06em;margin:48px 0 14px;padding-top:4px;display:flex;align-items:center;gap:12px;}
+h2::before{content:'';width:24px;height:1px;background:var(--gold);flex-shrink:0;}
+p{font-size:15px;color:var(--light);line-height:1.9;margin-bottom:14px;font-weight:300;}
+ul{margin:8px 0 20px 0;padding:0;list-style:none;}
+ul li{font-size:15px;color:var(--light);line-height:1.85;padding:5px 0 5px 22px;font-weight:300;position:relative;}
+ul li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:11px;top:8px;}
+a{color:var(--gold);text-decoration:none;transition:opacity .2s;}
+a:hover{opacity:.7;}
+strong{color:var(--white);font-weight:500;}
+
+.section-card{background:var(--glass);border:1px solid var(--gborder);border-radius:4px;padding:28px 32px;margin-bottom:4px;}
+
+.contact-box{background:rgba(212,160,23,.04);border:1px solid rgba(212,160,23,.2);border-radius:4px;padding:32px 36px;margin-top:56px;position:relative;overflow:hidden;}
+.contact-box::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(ellipse,rgba(212,160,23,.08) 0%,transparent 70%);pointer-events:none;}
+.contact-box h3{font-family:'Cinzel',serif;font-size:15px;font-weight:600;margin-bottom:12px;color:var(--white);}
+.contact-box p{margin-bottom:6px;font-size:14px;}
+
+/* FOOTER */
+footer{background:var(--black2);border-top:1px solid rgba(212,160,23,.08);padding:24px 56px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+@media(max-width:700px){footer{padding:20px;flex-direction:column;text-align:center;}}
+.f-logo{font-family:'Cinzel',serif;font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--grey);}
+.f-logo span{color:var(--gold);}
+.f-links{display:flex;gap:20px;}
+.f-links a{font-size:11px;color:var(--grey);text-decoration:none;letter-spacing:.05em;transition:color .2s;}
+.f-links a:hover{color:var(--gold);}
+.f-copy{font-size:10px;color:rgba(255,255,255,.13);}
+
+/* REVEAL */
+.r{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s;}
+.r.on{opacity:1;transform:none;}
+.d1{transition-delay:.06s;}.d2{transition-delay:.12s;}.d3{transition-delay:.18s;}
+</style>
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="ring"></div>
+<div id="pts"></div>
+
+<nav>
+  <a href="index.html" class="nlogo">Contract <span>Kings</span></a>
+  <a href="index.html" class="nback">← Back to Home</a>
+</nav>
+
+<div class="doc-hero">
+  <div class="doc-grid"></div>
+  <div class="doc-hero-inner">
+    <p class="doc-tag">Legal</p>
+    <h1 class="doc-title">Privacy<br><span class="g">Policy</span></h1>
+    <div class="doc-rule"></div>
+    <p class="doc-meta">Last updated: <span>January 1, 2026</span> &nbsp;·&nbsp; EKON Investments LLC &nbsp;·&nbsp; ekonrei.com</p>
+  </div>
+</div>
+
+<div class="div"></div>
+
+<div class="wrap">
+
+  <p class="r">EKON Investments LLC ("Contract Kings," "we," "us," or "our") operates ekonrei.com and the Contract Kings course platform. This Privacy Policy explains how we collect, use, and protect your information when you visit our website or purchase our course.</p>
+  <p class="r d1">By using our site or enrolling in Contract Kings, you agree to the practices described in this policy.</p>
+
+  <h2 class="r">1. Information We Collect</h2>
+  <p class="r d1">We collect information you provide directly to us, including:</p>
+  <ul class="r d2">
+    <li>Name and email address when you enroll or contact us</li>
+    <li>Billing and payment information processed through our payment provider (Whop)</li>
+    <li>Communications you send us via email or through our community platform</li>
+    <li>Any information you voluntarily share in the community or on coaching calls</li>
+  </ul>
+  <p class="r d3">We also automatically collect certain information when you visit our site, including IP address, browser type, pages visited, and referring URLs through standard web analytics tools.</p>
+
+  <h2 class="r">2. How We Use Your Information</h2>
+  <p class="r d1">We use the information we collect to:</p>
+  <ul class="r d2">
+    <li>Provide, operate, and improve Contract Kings and related services</li>
+    <li>Process your enrollment and payments</li>
+    <li>Send you course updates, coaching call reminders, and community announcements</li>
+    <li>Respond to your questions and support requests</li>
+    <li>Send you marketing communications about Contract Kings (you can opt out at any time)</li>
+    <li>Comply with legal obligations</li>
+  </ul>
+
+  <h2 class="r">3. How We Share Your Information</h2>
+  <p class="r d1">We do not sell your personal information. We may share your information with:</p>
+  <ul class="r d2">
+    <li><strong>Whop</strong> — our course and payment platform, which processes your enrollment and payment</li>
+    <li><strong>Email service providers</strong> — to send you course communications and updates</li>
+    <li><strong>Analytics providers</strong> — to understand how our site is used (data is aggregated and anonymized)</li>
+    <li><strong>Legal authorities</strong> — if required by law or to protect our rights</li>
+  </ul>
+
+  <h2 class="r">4. Cookies</h2>
+  <p class="r d1">We use cookies and similar tracking technologies to improve your experience on our site. You can control cookies through your browser settings. Disabling cookies may affect some functionality of our site.</p>
+
+  <h2 class="r">5. Data Retention</h2>
+  <p class="r d1">We retain your personal information for as long as necessary to provide our services and comply with legal obligations. If you close your account or request deletion, we will remove your data within a reasonable timeframe, except where we are required to retain it by law.</p>
+
+  <h2 class="r">6. Your Rights</h2>
+  <p class="r d1">Depending on your location, you may have the right to:</p>
+  <ul class="r d2">
+    <li>Access the personal information we hold about you</li>
+    <li>Request correction of inaccurate data</li>
+    <li>Request deletion of your personal information</li>
+    <li>Opt out of marketing communications at any time</li>
+    <li>Lodge a complaint with your local data protection authority</li>
+  </ul>
+  <p class="r d3">To exercise any of these rights, contact us at the address below.</p>
+
+  <h2 class="r">7. Children's Privacy</h2>
+  <p class="r d1">Contract Kings is not intended for individuals under the age of 18. We do not knowingly collect personal information from minors. If you believe we have collected information from a minor, please contact us immediately.</p>
+
+  <h2 class="r">8. Third-Party Links</h2>
+  <p class="r d1">Our site and course may contain links to third-party websites or tools (such as Whop, GoHighLevel, or Zillow). We are not responsible for the privacy practices of those platforms. We encourage you to review their privacy policies before providing any personal information.</p>
+
+  <h2 class="r">9. Security</h2>
+  <p class="r d1">We implement reasonable technical and organizational measures to protect your information. However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security of your data.</p>
+
+  <h2 class="r">10. Changes to This Policy</h2>
+  <p class="r d1">We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Continued use of our site or services after changes constitutes acceptance of the updated policy.</p>
+
+  <div class="contact-box r">
+    <h3>Questions about this policy?</h3>
+    <p>EKON Investments LLC</p>
+    <p>Website: <a href="https://ekonrei.com">ekonrei.com</a></p>
+    <p>Email: <a href="/cdn-cgi/l/email-protection#aad9dfdadac5d8deeacfc1c5c4d8cfc384c9c5c7"><span class="__cf_email__" data-cfemail="a2d1d7d2d2cdd0d6e2c7c9cdccd0c7cb8cc1cdcf">[email&#160;protected]</span></a></p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="f-logo">Contract <span>Kings</span></div>
+  <div class="f-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="index.html">Back to Home</a>
+  </div>
+  <p class="f-copy">© 2026 Contract Kings · EKON Investments LLC. All rights reserved.</p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function tick(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(tick);})();
+document.querySelectorAll('a').forEach(a=>{
+  a.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';ring.style.width='42px';ring.style.height='42px';});
+  a.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='30px';ring.style.height='30px';});
+});
+const pts=document.getElementById('pts');
+const colors=['rgba(212,160,23,1)','rgba(212,160,23,.5)','rgba(255,255,255,.2)'];
+for(let i=0;i<18;i++){
+  const p=document.createElement('div');p.className='pt';
+  const s=Math.random()>.6?3:2;
+  p.style.cssText=`left:${Math.random()*100}%;width:${s}px;height:${s}px;background:${colors[Math.floor(Math.random()*3)]};animation-duration:${9+Math.random()*13}s;animation-delay:${Math.random()*14}s;box-shadow:0 0 4px rgba(212,160,23,
