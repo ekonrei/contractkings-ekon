@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Contract Kings</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:#000;color:#fff;font-family:'DM Sans',sans-serif;overflow-x:hidden;cursor:none;}
+@media(max-width:768px){body{cursor:auto;}}
+#cur{width:8px;height:8px;background:#F5C842;border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 10px #F5C842,0 0 20px rgba(245,200,66,.3);}
+#ring{width:26px;height:26px;border:1px solid rgba(212,160,23,.3);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+@media(max-width:768px){#cur,#ring{display:none;}}
+.neb{position:absolute;border-radius:50%;filter:blur(100px);animation:nebpulse ease-in-out infinite;pointer-events:none;}
+@keyframes nebpulse{0%,100%{opacity:.6;transform:scale(1);}50%{opacity:1;transform:scale(1.06);}}
+.neb1{width:600px;height:600px;background:radial-gradient(ellipse,rgba(212,160,23,.06) 0%,transparent 65%);top:-200px;left:-150px;animation-duration:16s;position:fixed;}
+.neb2{width:500px;height:500px;background:radial-gradient(ellipse,rgba(180,130,20,.04) 0%,transparent 65%);bottom:-150px;right:-100px;animation-duration:12s;animation-delay:-6s;position:fixed;}
+nav{padding:18px 56px;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,.9);border-bottom:1px solid rgba(212,160,23,.08);position:sticky;top:0;z-index:100;backdrop-filter:blur(20px);}
+.nlo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.14em;text-decoration:none;color:rgba(255,255,255,.75);}
+.nlo span{color:#F5C842;text-shadow:0 0 18px rgba(245,200,66,.7);}
+.nbk{font-size:12px;color:#D4A017;text-decoration:none;letter-spacing:.04em;transition:opacity .2s;}
+.nbk:hover{opacity:.7;}
+@media(max-width:700px){nav{padding:14px 20px;}}
+.dh{padding:72px 56px 52px;max-width:840px;margin:0 auto;position:relative;z-index:2;}
+.dh-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(212,160,23,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(212,160,23,.018) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 70% 70% at 80% 30%,black 0%,transparent 100%);pointer-events:none;}
+.dh-in{position:relative;z-index:2;}
+.dtag{font-size:9px;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:#D4A017;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.dtag::before,.dtag::after{content:'';width:12px;height:1px;background:#8B6410;}
+.dtitle{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,9vw,100px);line-height:.88;letter-spacing:.03em;margin-bottom:14px;color:#E8E8E8;}
+.dtitle .g{color:#F5C842;}
+.drule{width:38px;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.6),transparent);margin:14px 0;}
+.dmeta{font-size:12px;color:rgba(255,255,255,.2);letter-spacing:.04em;}
+.dmeta span{color:#D4A017;}
+@media(max-width:700px){.dh{padding:48px 20px 36px;}}
+.gd{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.12),transparent);}
+.wrap{max-width:840px;margin:0 auto;padding:56px 56px 100px;position:relative;z-index:2;}
+@media(max-width:700px){.wrap{padding:24px 14px 60px;}}
+h2{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.06em;color:#E8E8E8;margin:44px 0 14px;display:flex;align-items:center;gap:10px;}
+h2::before{content:'';width:18px;height:1px;background:#D4A017;flex-shrink:0;}
+p{font-size:15px;color:rgba(255,255,255,.55);line-height:1.9;margin-bottom:14px;font-weight:300;}
+ul{margin:6px 0 14px;padding:0;list-style:none;}
+ul li{font-size:14px;color:rgba(255,255,255,.55);line-height:1.85;padding:6px 0 6px 20px;font-weight:300;position:relative;}
+ul li::before{content:'→';position:absolute;left:0;color:#D4A017;font-size:11px;top:7px;}
+a{color:#D4A017;text-decoration:none;transition:opacity .2s;}
+a:hover{opacity:.7;}
+strong{color:#E8E8E8;font-weight:500;}
+.hbox{background:rgba(212,160,23,.04);border:1px solid rgba(212,160,23,.18);border-radius:6px;padding:16px 20px;margin:11px 0;}
+.hbox p{margin:0;font-size:13px;}
+.cbox{border:1px solid rgba(212,160,23,.18);border-radius:8px;padding:26px 30px;margin-top:44px;position:relative;overflow:hidden;}
+.cbox::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.4),transparent);}
+.cbox h3{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.06em;margin-bottom:10px;color:#E8E8E8;}
+.cbox p{margin-bottom:4px;font-size:13px;}
+footer{border-top:1px solid rgba(212,160,23,.07);padding:22px 56px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;position:relative;z-index:2;}
+@media(max-width:700px){footer{padding:16px 20px;flex-direction:column;text-align:center;align-items:center;}}
+.flo{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.14em;color:rgba(255,255,255,.2);}
+.flo span{color:#F5C842;}
+.fli{display:flex;gap:16px;flex-wrap:wrap;}
+.fli a{font-size:11px;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s;}
+.fli a:hover{color:#D4A017;}
+.fco{font-size:10px;color:rgba(255,255,255,.1);}
+.r{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;}
+.r.on{opacity:1;transform:none;}
+.d1{transition-delay:.06s;}.d2{transition-delay:.12s;}.d3{transition-delay:.18s;}
+canvas{position:fixed;inset:0;z-index:0;pointer-events:none;}
+#grid-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.038) 1px,transparent 1px);background-size:60px 60px;}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  .hero{padding:80px 18px 60px;min-height:auto;}
+  .hh{font-size:clamp(58px,14vw,80px);}
+  .pills{gap:6px;}
+  .glist{grid-template-columns:1fr;}
+  .compare-wrap{margin-top:28px;border-radius:10px;}
+  .compare{min-width:420px;}
+  .compare th,.compare td{padding:11px 14px;font-size:12px;}
+  .slist{gap:8px;}
+  .step{padding:16px 18px;}
+  .tgrid{grid-template-columns:1fr;}
+  .offer{padding:36px 18px;}
+  .olist{padding:16px 18px;}
+  .flist{gap:6px;}
+  .fqt{font-size:13px;}
+  .ctaw .btn{padding:15px 28px;font-size:12px;}
+  footer{flex-direction:column;text-align:center;align-items:center;gap:14px;padding:22px 18px;}
+  .fli{justify-content:center;}
+}
+@media(max-width:480px){
+  .hh{font-size:clamp(52px,14vw,68px);}
+  .compare{min-width:360px;}
+  .glist{grid-template-columns:1fr;}
+  .gi{padding:18px 16px;}
+}
+</style>
+</head>
+<body>
+<div id="cur"></div>
+<div id="ring"></div>
+<canvas id="starfield"></canvas>
+<div id="grid-bg"></div>
+<nav>
+  <a href="index.html" class="nlo">Contract <span>Kings</span></a>
+  <a href="index.html" class="nbk">← Back to Home</a>
+</nav>
+<div class="dh">
+  <div class="dh-grid"></div>
+  <div class="dh-in">
+    <p class="dtag">Legal</p>
+    <h1 class="dtitle">Privacy<br><span class="g">Policy</span></h1>
+    <div class="drule"></div>
+    <p class="dmeta">Last updated: <span>January 1, 2026</span> &nbsp;·&nbsp; EKON Investments LLC &nbsp;·&nbsp; ekonrei.com</p>
+  </div>
+</div>
+<div class="gd"></div>
+<div class="wrap"><div style="background:rgba(8,8,8,.88);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:40px 44px;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.3),transparent);"></div>
+
+  <p class="r">EKON Investments LLC ("Contract Kings," "we," "us," or "our") operates ekonrei.com and the Contract Kings mentorship and course platform. This Privacy Policy explains how we collect, use, and protect your information.</p>
+  <p class="r d1">By using our site or enrolling in Contract Kings, you agree to the practices described here.</p>
+  <h2 class="r">1. Information We Collect</h2>
+  <ul class="r d1">
+    <li>Name and email address when you enroll or contact us</li>
+    <li>Billing and payment information processed through Whop</li>
+    <li>Information submitted through our application or booking process (Calendly)</li>
+    <li>Communications you send via email or through our community</li>
+    <li>Any information you voluntarily share in the community or on calls</li>
+  </ul>
+  <p class="r d2">We also automatically collect IP address, browser type, pages visited, and referring URLs through standard analytics tools.</p>
+  <h2 class="r">2. How We Use Your Information</h2>
+  <ul class="r d1">
+    <li>Provide, operate, and improve Contract Kings services</li>
+    <li>Process your enrollment and payments</li>
+    <li>Schedule and manage mentorship and coaching calls</li>
+    <li>Send course updates, call reminders, and announcements</li>
+    <li>Respond to support requests</li>
+    <li>Send marketing communications (opt out anytime)</li>
+    <li>Comply with legal obligations</li>
+  </ul>
+  <h2 class="r">3. How We Share Your Information</h2>
+  <p class="r d1">We do not sell your personal information. We may share it with:</p>
+  <ul class="r d2">
+    <li><strong>Whop</strong> — course and payment platform</li>
+    <li><strong>Calendly</strong> — booking and scheduling platform</li>
+    <li><strong>GoHighLevel</strong> — CRM and outreach platform (for EKON CRM subscribers, optional)</li>
+    <li><strong>Analytics providers</strong> — aggregated and anonymized data only</li>
+    <li><strong>Legal authorities</strong> — if required by law</li>
+  </ul>
+  <h2 class="r">4. Cookies</h2>
+  <p class="r d1">We use cookies to improve your experience. You can control cookies through your browser settings.</p>
+  <h2 class="r">5. Data Retention</h2>
+  <p class="r d1">We retain your information as long as necessary to provide services and comply with legal obligations. Request deletion by contacting us below.</p>
+  <h2 class="r">6. Your Rights</h2>
+  <ul class="r d1">
+    <li>Access the personal information we hold about you</li>
+    <li>Request correction of inaccurate data</li>
+    <li>Request deletion of your personal information</li>
+    <li>Opt out of marketing communications at any time</li>
+  </ul>
+  <h2 class="r">7. Children's Privacy</h2>
+  <p class="r d1">Contract Kings is not intended for anyone under 18. We do not knowingly collect information from minors.</p>
+  <h2 class="r">8. Third-Party Links</h2>
+  <p class="r d1">Our site may link to third-party platforms including Whop, Calendly, GoHighLevel, and Discord. We are not responsible for their privacy practices.</p>
+  <h2 class="r">9. Security</h2>
+  <p class="r d1">We implement reasonable measures to protect your information. No internet transmission is 100% secure.</p>
+  <h2 class="r">10. Changes to This Policy</h2>
+  <p class="r d1">We may update this policy from time to time. Continued use of our services constitutes acceptance of updates.</p>
+
+  <div class="cbox r">
+    <h3>Questions?</h3>
+    <p>EKON Investments LLC</p>
+    <p>Website: <a href="https://ekonrei.com">ekonrei.com</a></p>
+    <p>Email: <a href="mailto:support@ekonrei.com">support@ekonrei.com</a></p>
+  </div>
+</div></div>
+<footer>
+  <div class="flo">Contract <span>Kings</span></div>
+  <div class="fli">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="index.html">Back to Home</a>
+  </div>
+  <p class="fco">© 2026 Contract Kings · EKON Investments LLC</p>
+</footer>
+<script>
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function t(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(t);})();
+// Dots
+// Dots
+const canvas=document.getElementById('starfield'),ctx=canvas.getContext('2d');
+let dots=[],W,H;
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;initDots();}
+function initDots(){dots=[];for(let i=0;i<140;i++)dots.push({x:Math.random()*W,y:Math.random()*H,r:.4+Math.random()*1.1,phase:Math.random()*Math.PI*2,speed:.002+Math.random()*.007,base:.1+Math.random()*.4});}
+function drawFrame(){ctx.clearRect(0,0,W,H);dots.forEach(d=>{d.phase+=d.speed;const a=d.base*(.35+.65*Math.sin(d.phase));ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${a})`;ctx.fill();});requestAnimationFrame(drawFrame);}
+window.addEventListener('resize',resize);resize();requestAnimationFrame(drawFrame);
+window.addEventListener('resize',resize);resize();requestAnimationFrame(drawFrame);
+window.addEventListener('resize',resize);resize();requestAnimationFrame(drawFrame);
+const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.08});
+document.querySelectorAll('.r').forEach(el=>ro.observe(el));
+</script>
+</body>
+</html>
