@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Contract Kings</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:#000;color:#fff;font-family:'DM Sans',sans-serif;overflow-x:hidden;cursor:none;}
+@media(max-width:768px){body{cursor:auto;}}
+#cur{width:8px;height:8px;background:#F5C842;border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 10px #F5C842,0 0 20px rgba(245,200,66,.3);}
+#ring{width:26px;height:26px;border:1px solid rgba(212,160,23,.3);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);}
+@media(max-width:768px){#cur,#ring{display:none;}}
+.neb{position:absolute;border-radius:50%;filter:blur(100px);animation:nebpulse ease-in-out infinite;pointer-events:none;}
+@keyframes nebpulse{0%,100%{opacity:.6;transform:scale(1);}50%{opacity:1;transform:scale(1.06);}}
+.neb1{width:600px;height:600px;background:radial-gradient(ellipse,rgba(212,160,23,.06) 0%,transparent 65%);top:-200px;left:-150px;animation-duration:16s;position:fixed;}
+.neb2{width:500px;height:500px;background:radial-gradient(ellipse,rgba(180,130,20,.04) 0%,transparent 65%);bottom:-150px;right:-100px;animation-duration:12s;animation-delay:-6s;position:fixed;}
+nav{padding:18px 56px;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,.9);border-bottom:1px solid rgba(212,160,23,.08);position:sticky;top:0;z-index:100;backdrop-filter:blur(20px);}
+.nlo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.14em;text-decoration:none;color:rgba(255,255,255,.75);}
+.nlo span{color:#F5C842;text-shadow:0 0 18px rgba(245,200,66,.7);}
+.nbk{font-size:12px;color:#D4A017;text-decoration:none;letter-spacing:.04em;transition:opacity .2s;}
+.nbk:hover{opacity:.7;}
+@media(max-width:700px){nav{padding:14px 20px;}}
+.dh{padding:72px 56px 52px;max-width:840px;margin:0 auto;position:relative;z-index:2;}
+.dh-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(212,160,23,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(212,160,23,.018) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 70% 70% at 80% 30%,black 0%,transparent 100%);pointer-events:none;}
+.dh-in{position:relative;z-index:2;}
+.dtag{font-size:9px;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:#D4A017;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.dtag::before,.dtag::after{content:'';width:12px;height:1px;background:#8B6410;}
+.dtitle{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,9vw,100px);line-height:.88;letter-spacing:.03em;margin-bottom:14px;color:#E8E8E8;}
+.dtitle .g{color:#F5C842;}
+.drule{width:38px;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.6),transparent);margin:14px 0;}
+.dmeta{font-size:12px;color:rgba(255,255,255,.2);letter-spacing:.04em;}
+.dmeta span{color:#D4A017;}
+@media(max-width:700px){.dh{padding:48px 20px 36px;}}
+.gd{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.12),transparent);}
+.wrap{max-width:840px;margin:0 auto;padding:56px 56px 100px;position:relative;z-index:2;}
+@media(max-width:700px){.wrap{padding:24px 14px 60px;}}
+h2{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.06em;color:#E8E8E8;margin:44px 0 14px;display:flex;align-items:center;gap:10px;}
+h2::before{content:'';width:18px;height:1px;background:#D4A017;flex-shrink:0;}
+p{font-size:15px;color:rgba(255,255,255,.55);line-height:1.9;margin-bottom:14px;font-weight:300;}
+ul{margin:6px 0 14px;padding:0;list-style:none;}
+ul li{font-size:14px;color:rgba(255,255,255,.55);line-height:1.85;padding:6px 0 6px 20px;font-weight:300;position:relative;}
+ul li::before{content:'→';position:absolute;left:0;color:#D4A017;font-size:11px;top:7px;}
+a{color:#D4A017;text-decoration:none;transition:opacity .2s;}
+a:hover{opacity:.7;}
+strong{color:#E8E8E8;font-weight:500;}
+.hbox{background:rgba(212,160,23,.04);border:1px solid rgba(212,160,23,.18);border-radius:6px;padding:16px 20px;margin:11px 0;}
+.hbox p{margin:0;font-size:13px;}
+.cbox{border:1px solid rgba(212,160,23,.18);border-radius:8px;padding:26px 30px;margin-top:44px;position:relative;overflow:hidden;}
+.cbox::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.4),transparent);}
+.cbox h3{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.06em;margin-bottom:10px;color:#E8E8E8;}
+.cbox p{margin-bottom:4px;font-size:13px;}
+footer{border-top:1px solid rgba(212,160,23,.07);padding:22px 56px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;position:relative;z-index:2;}
+@media(max-width:700px){footer{padding:16px 20px;flex-direction:column;text-align:center;align-items:center;}}
+.flo{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.14em;color:rgba(255,255,255,.2);}
+.flo span{color:#F5C842;}
+.fli{display:flex;gap:16px;flex-wrap:wrap;}
+.fli a{font-size:11px;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s;}
+.fli a:hover{color:#D4A017;}
+.fco{font-size:10px;color:rgba(255,255,255,.1);}
+.r{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s;}
+.r.on{opacity:1;transform:none;}
+.d1{transition-delay:.06s;}.d2{transition-delay:.12s;}.d3{transition-delay:.18s;}
+canvas{position:fixed;inset:0;z-index:0;pointer-events:none;}
+#grid-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.038) 1px,transparent 1px);background-size:60px 60px;}
+
+
+  .compare{min-width:360px;}
+  .glist{grid-template-columns:1fr;}
+  .gi{padding:18px 16px;}
+}
+
+/* ── MOBILE ── */
+@media(max-width:700px){
+  .dh{padding:36px 16px 28px;}
+  .wrap{padding:20px 14px 60px;}
+  .dtitle{font-size:clamp(44px,12vw,70px);}
+  nav{padding:12px 16px;}
+  footer{padding:14px 16px;flex-direction:column;text-align:center;align-items:center;gap:10px;}
+  .fli{justify-content:center;flex-wrap:wrap;}
+}
+@media(max-width:700px){
+  /* Fix the inline content box padding */
+  .wrap > div[style]{padding:24px 18px !important;}
+  h2{font-size:16px;margin:32px 0 10px;}
+  p,ul li{font-size:14px;}
+  .cbox{padding:20px 18px;}
+}
+</style>
+</head>
+<body>
+<div id="cur"></div>
+<div id="ring"></div>
+<canvas id="starfield"></canvas>
+<div id="grid-bg"></div>
+<nav>
+  <a href="index.html" class="nlo">Contract <span>Kings</span></a>
+  <a href="index.html" class="nbk">← Back to Home</a>
+</nav>
+<div class="dh">
+  <div class="dh-grid"></div>
+  <div class="dh-in">
+    <p class="dtag">Legal</p>
+    <h1 class="dtitle">Terms of<br><span class="g">Service</span></h1>
+    <div class="drule"></div>
+    <p class="dmeta">Last updated: <span>January 1, 2026</span> &nbsp;·&nbsp; EKON Investments LLC &nbsp;·&nbsp; ekonrei.com</p>
+  </div>
+</div>
+<div class="gd"></div>
+<div class="wrap"><div style="background:rgba(8,8,8,.88);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:40px 44px;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.3),transparent);"></div>
+
+  <p class="r">Please read these Terms carefully before enrolling. By accessing our website or purchasing our services, you agree to be bound by these Terms.</p>
+  <h2 class="r">1. About Contract Kings</h2>
+  <p class="r d1">Contract Kings is a wholesale real estate education and mentorship service operated by EKON Investments LLC. We are not a licensed real estate brokerage or financial advisory service.</p>
+  <h2 class="r">2. Eligibility</h2>
+  <p class="r d1">You must be at least 18 years old to enroll. Contract Kings provides educational content only.</p>
+  <h2 class="r">3. Services & Access</h2>
+  <p class="r d1"><strong>1-on-1 Mentorship includes:</strong></p>
+  <ul class="r d2">
+    <li>2-hour done-for-you onboarding call</li>
+    <li>Ongoing call access as needed until your first deal closes</li>
+    <li>Full course access (all 9 modules)</li>
+    <li>Private Whop community access</li>
+    <li>Scripts, templates, and custom operation plan</li>
+    <li>Proprietary outreach sequences (configured in your account)</li>
+    <li>First month of EKON CRM included at no charge</li>
+    <li>A2P registration handled by EKON Investments LLC on your behalf</li>
+    <li>EKON CRM continues at $97/mo after month 1 (optional, cancel anytime)</li>
+  </ul>
+  <p class="r d1"><strong>Community Membership ($50/mo) includes:</strong></p>
+  <ul class="r d2">
+    <li>Full course access (all 9 modules)</li>
+    <li>Weekly group coaching calls</li>
+    <li>Live seller call sessions</li>
+    <li>Private Whop community access</li>
+    <li>Scripts and templates</li>
+    <li>Optional EKON CRM access at $119/mo</li>
+  </ul>
+  <p class="r d3">Access is granted to the individual purchaser only. Sharing, transferring, or reselling access may result in immediate termination without refund.</p>
+  <h2 class="r">4. Pricing & Payment</h2>
+  <ul class="r d1">
+    <li><strong>1-on-1 Mentorship:</strong> One-time payment — amount discussed on the application call. No recurring fees.</li>
+    <li><strong>Community Membership:</strong> $50/mo, billed monthly. Cancel anytime.</li>
+    <li><strong>EKON CRM — Optional (Mentees):</strong> First month included free. $97/mo after month 1. A2P registration handled by us. Optional, cancel anytime.</li>
+    <li><strong>EKON CRM — Optional (Community):</strong> $119/mo. A2P registration is the subscriber's responsibility. Optional, cancel anytime.</li>
+  </ul>
+  <p class="r d2">All payments processed through Whop. Prices subject to change for new enrollments.</p>
+  <h2 class="r">5. Cancellation Policy</h2>
+  <p class="r d1">Community and EKON CRM subscribers may cancel anytime through Whop. Access continues through the end of the billing period. No partial refunds for unused time within a billing cycle.</p>
+  <h2 class="r">6. Refund & Money-Back Guarantee</h2>
+  <div class="hbox r d1"><p><strong>90-Day Guarantee:</strong> Complete the onboarding, follow the plan we build together, and if you haven't closed a wholesale contract within 90 days — full refund, no questions asked.</p></div>
+  <p class="r d2">To qualify you must:</p>
+  <ul class="r d3">
+    <li>Have completed the 2-hour onboarding call (mentorship) or all 9 modules (community)</li>
+    <li>Have followed the operation plan built during onboarding</li>
+    <li>Submit your refund request within 90 days of enrollment</li>
+  </ul>
+  <p class="r d1">All refund requests must be submitted to support@ekonrei.com.</p>
+  <h2 class="r">7. Educational Disclaimer</h2>
+  <p class="r d1">Contract Kings provides <strong>educational content only.</strong> Nothing constitutes legal, financial, tax, or investment advice. Real estate investing involves risk. Results are not typical and not guaranteed.</p>
+  <h2 class="r">8. Intellectual Property & Proprietary Systems</h2>
+  <p class="r d1">All Contract Kings content — including course videos, scripts, templates, outreach sequences, automations, and community materials — is the intellectual property of EKON Investments LLC. You may not reproduce, distribute, teach, resell, or create derivative works from any materials without express written permission.</p>
+  <p class="r d2">Proprietary outreach systems and automations provided during mentorship are for your personal use only. They may not be shared, resold, or used as the basis of any competing education or mentorship product. Violation may result in immediate termination and legal action.</p>
+  <h2 class="r">9. Community Conduct</h2>
+  <ul class="r d1">
+    <li>Treat all members and instructors with respect</li>
+    <li>Do not promote competing products or services within the community</li>
+    <li>Do not share course materials outside the platform</li>
+    <li>Do not engage in spam, harassment, or abusive behavior</li>
+  </ul>
+  <p class="r d2">We reserve the right to remove members and revoke access without refund for violations.</p>
+  <h2 class="r">10. Limitation of Liability</h2>
+  <p class="r d1">EKON Investments LLC shall not be liable for any indirect, incidental, or consequential damages. Total liability shall not exceed amounts paid in the 12 months preceding any claim.</p>
+  <h2 class="r">11. Governing Law</h2>
+  <p class="r d1">These Terms are governed by US law. Disputes shall be resolved through binding arbitration except where prohibited.</p>
+  <h2 class="r">12. Changes to These Terms</h2>
+  <p class="r d1">We may update these Terms from time to time. Continued use constitutes acceptance of updates.</p>
+
+  <div class="cbox r">
+    <h3>Questions?</h3>
+    <p>EKON Investments LLC</p>
+    <p>Website: <a href="https://ekonrei.com">ekonrei.com</a></p>
+    <p>Email: <a href="mailto:support@ekonrei.com">support@ekonrei.com</a></p>
+  </div>
+</div></div>
+<footer>
+  <div class="flo">Contract <span>Kings</span></div>
+  <div class="fli">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="index.html">Back to Home</a>
+  </div>
+  <p class="fco">© 2026 Contract Kings · EKON Investments LLC</p>
+</footer>
+<script>
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px';});
+(function t(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(t);})();
+// Dots
+// Dots
+const canvas=document.getElementById('starfield'),ctx=canvas.getContext('2d');
+let dots=[],W,H;
+function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;initDots();}
+function initDots(){dots=[];for(let i=0;i<140;i++)dots.push({x:Math.random()*W,y:Math.random()*H,r:.4+Math.random()*1.1,phase:Math.random()*Math.PI*2,speed:.002+Math.random()*.007,base:.1+Math.random()*.4});}
+function drawFrame(){ctx.clearRect(0,0,W,H);dots.forEach(d=>{d.phase+=d.speed;const a=d.base*(.35+.65*Math.sin(d.phase));ctx.beginPath();ctx.arc(d.x,d.y,d.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${a})`;ctx.fill();});requestAnimationFrame(drawFrame);}
+window.addEventListener('resize',resize);resize();requestAnimationFrame(drawFrame);
+window.addEventListener('resize',resize);resize();requestAnimationFrame(drawFrame);
+window.addEventListener('resize',resize);resize();requestAnimationFrame(drawFrame);
+const ro=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.08});
+document.querySelectorAll('.r').forEach(el=>ro.observe(el));
+</script>
+</body>
+</html>
